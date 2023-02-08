@@ -32,7 +32,7 @@ import requests
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 
-streamlit.txt(fruityvice_response.json())
+
 
 
 
