@@ -46,7 +46,7 @@ try:
   else:
     
     back_from_function = get_fruityvice_data (fruit_choice)
-    streamlit.datyaframe(back_from_function)
+    streamlit.dataframe(back_from_function)
 
 fruityvice_response = requests.get ("Https://fruityvice.com/api/fruit/" + fruit_choice)
   
