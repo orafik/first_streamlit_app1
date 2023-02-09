@@ -41,7 +41,7 @@ try:
   if not fruit_choice:
     streamlit.error("please select a fruit to get information")
     
-    else
+  else:
     
     back_from_function = get_fruityvice_data (fruit_choice)
     streamlit.datyaframe(back_from_function)
