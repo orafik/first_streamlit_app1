@@ -1,18 +1,8 @@
-import streamlit
-import pandas
-import requests
-import snowflake.connector
-from urllib.error import URLError
 
-      
-
-
-def insert_row_snowflake(new_fruit):
-  with my_cnx.cursor() as my_cur:
-    my_cur.execute("insert into fruit_load_list values ('" + new_fruit +"')")
-    return "Thanks for adding " + new_fruit
-
-
+streamlit.header('Breakfast Menu')
+streamlit.text('Omega 3 & Blueberry Oatmeal')
+streamlit.text('Kale, Spinach & Rocket Smoothie')
+streamlit.text('Hard-Boiled Free-Range Egg')
 
 
 
