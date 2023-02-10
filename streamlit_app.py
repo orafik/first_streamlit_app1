@@ -32,10 +32,11 @@ streamlit.dataframe(fruits_to_show)
 
 def get_fruityvice_data(this_fruit_choice):
   
-    fruityvice_response = requests.get ("Https://fruityvice.com/api/fruit/" + this_fruit_choice)
+    fruityvice_response = requests.get ("https://fruityvice.com/api/fruit/" + this_fruit_choice)
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
   
     return fruityvice_normalized
+  
 streamlit.header("Fruityvice Fruit Advice!")
 
 try:
@@ -63,10 +64,10 @@ except URLError as e:
   
 
 
-add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
-streamlit.write('Thanks for adding ', add_my_fruit)
+#add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
+#streamlit.write('Thanks for adding ', add_my_fruit)
 
-streamlit.write ("end of foe")
+#streamlit.write ("end of foe")
 
 
 
